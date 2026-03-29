@@ -64,17 +64,17 @@ Có nhiều loại lớp khác nhau được sử dụng trong mạng nơ-ron. T
 
 Ta có thể trực quan hóa điều này như một phép biến đổi liên tục.
 
-<img width="598" height="584" alt="image" src="https://github.com/user-attachments/assets/1314f728-7d52-4667-b7be-1b1aba3ddffd" />
-
-
-![abc](https://colah.github.io/posts/2014-03-NN-Manifolds-Topology/img/1layer.gif)
+![NN-Manifolds-Topology](https://colah.github.io/posts/2014-03-NN-Manifolds-Topology/img/1layer.gif)
 
 Câu chuyện cũng tương tự với các lớp chuẩn khác, bao gồm một phép biến đổi affine theo sau bởi việc áp dụng theo từng điểm của một hàm kích hoạt đơn điệu.
 
 Ta có thể áp dụng kỹ thuật này để hiểu các mạng phức tạp hơn. Ví dụ, một mạng phân loại hai vòng xoắn hơi rối nhau bằng cách sử dụng bốn lớp ẩn. Theo thời gian, ta có thể thấy nó dịch chuyển từ biểu diễn "thô" sang các biểu diễn cấp cao hơn mà nó đã học để phân loại dữ liệu. Trong khi các vòng xoắn ban đầu bị rối, cuối cùng chúng có thể phân tách tuyến tính.
 
+![spiral](https://colah.github.io/posts/2014-03-NN-Manifolds-Topology/img/spiral.1-2.2-2-2-2-2-2.gif)
+
 Mặt khác, một mạng khác, cũng sử dụng nhiều lớp, thất bại trong việc phân loại hai vòng xoắn rối hơn.
 
+![spiral2](https://colah.github.io/posts/2014-03-NN-Manifolds-Topology/img/spiral.2.2-2-2-2-2-2-2.gif)
 Đáng lưu ý rằng những bài toán này chỉ có phần nào thách thức vì ta đang sử dụng mạng nơ-ron số chiều thấp. Nếu dùng mạng rộng hơn, tất cả những điều này sẽ khá dễ dàng.
 
 ---
@@ -107,6 +107,8 @@ $$A = \{x \mid d(x, 0) < 1/3\}$$
 $$B = \{x \mid 2/3 < d(x, 0) < 1\}$$
 
 **Nhận định:** Không thể có một mạng nơ-ron phân loại tập dữ liệu này mà không có một lớp với 3 hoặc nhiều hơn các đơn vị ẩn, bất kể độ sâu.
+
+![topology_base](https://colah.github.io/posts/2014-03-NN-Manifolds-Topology/img/topology_base.png)
 
 Như đã đề cập, phân loại bằng đơn vị sigmoid hay lớp softmax tương đương với việc tìm một siêu phẳng (hay trong trường hợp này là một đường thẳng) tách $A$ và $B$ trong biểu diễn cuối cùng. Với chỉ hai đơn vị ẩn, mạng về mặt tô-pô không có khả năng tách dữ liệu theo cách này, và chắc chắn sẽ thất bại với tập dữ liệu này.
 
