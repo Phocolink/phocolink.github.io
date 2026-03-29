@@ -65,6 +65,8 @@ Có nhiều loại lớp khác nhau được sử dụng trong mạng nơ-ron. T
 Ta có thể trực quan hóa điều này như một phép biến đổi liên tục.
 
 <img width="598" height="584" alt="image" src="https://github.com/user-attachments/assets/1314f728-7d52-4667-b7be-1b1aba3ddffd" />
+
+
 ![abc](https://colah.github.io/posts/2014-03-NN-Manifolds-Topology/img/1layer.gif)
 
 Câu chuyện cũng tương tự với các lớp chuẩn khác, bao gồm một phép biến đổi affine theo sau bởi việc áp dụng theo từng điểm của một hàm kích hoạt đơn điệu.
