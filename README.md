@@ -20,6 +20,9 @@ Từ đó dẫn đến một số điều thú vị, bao gồm cả các giới 
 
 Hãy bắt đầu với một tập dữ liệu rất đơn giản: hai đường cong trên một mặt phẳng. Mạng sẽ học cách phân loại các điểm thuộc về đường này hay đường kia.
 
+<img width="598" height="584" alt="image" src="https://github.com/user-attachments/assets/b24c6714-c4dd-45eb-b792-e86eaa6c5436" />
+
+
 Cách hiển nhiên nhất để trực quan hóa hành vi của một mạng nơ-ron — hay bất kỳ thuật toán phân loại nào — là chỉ đơn giản xem nó phân loại mọi điểm dữ liệu có thể như thế nào.
 
 Ta bắt đầu với lớp mạng nơ-ron đơn giản nhất có thể: chỉ có một lớp đầu vào và một lớp đầu ra. Mạng như vậy chỉ đơn giản cố gắng tách hai lớp dữ liệu bằng cách chia chúng bằng một đường thẳng.
